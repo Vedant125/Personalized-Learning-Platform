@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SkillForge</title>
     <link rel="stylesheet" href="Home.css">
-    
+
 </head>
 
 <body>
@@ -23,18 +24,19 @@
 
         <!-- Right authentication links -->
         <div class="auth-links">
-            <a href="#login" class="button">Login</a>
+            <a href="#login" class="button" onclick="showLoginPopup()">Login</a>
             <a href="#register" class="button" onclick="showRegisterPopup()">Register</a>
         </div>
     </div>
     <div class="main">
         <div class="text">
             <h1>
-                Empower Your Learning Journey with AI-Powered Precision: Tailored Courses, Adaptive Paths, and Personalized Growth
+                Empower Your Learning Journey with AI-Powered Precision: Tailored Courses, Adaptive Paths, and
+                Personalized Growth
             </h1>
         </div>
         <div class="image">
-            <img alt="Smiling student holding books" height="500" src="homepg-img.png" width="400"/>
+            <img alt="Smiling student holding books" height="500" src="homepg-img.png" width="400" />
         </div>
     </div>
     <!-- Registration Popup Modal -->
@@ -48,6 +50,20 @@
             <button type="submit">Register</button>
         </form>
     </div>
+    <!-- Login Popup Modal -->
+    <div id="loginPopup" class="popup">
+        <form id="loginForm" class="popup-content" onsubmit="handleLogin(event)">
+            <span onclick="hideLoginPopup()" class="close">&times;</span>
+            <h2>Login</h2>
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+            <p id="loginError" style="color: red; display: none;">Invalid details</p>
+            <p>Don't have an account? <a href="#" onclick="switchToRegister()">Sign Up</a></p>
+        </form>
+    </div>
     <script src="register.js"></script>
+    <script src="login.js"></script>
 </body>
+
 </html>
