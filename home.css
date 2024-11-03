@@ -1,84 +1,109 @@
 /* Reset default browser styling */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
   
-  /* Navbar Styling */
-  nav {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #ffffff;
-    color: #000000;
-    padding: 15px 20px;
-    font-family: Arial, sans-serif;
-    /* width: 100%; */
-  }
-  
-  /* Left-side logo */
-  .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  /* Center navigation links */
-  .nav-links {
-    display: flex;
-    gap: 80px;
-    list-style: none;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: #050505;
-    font-size: 1rem;
-    transition: color 0.3s;
-  }
-  
-  .nav-links a:hover {
-    color: #f0a500;
-  }
-  
-  /* Right-side authentication links */
-  .auth-links {
-    display: flex;
-    gap: 15px;
-  }
-  
-  .auth-links a {
-    text-decoration: none;
-    color: #000000;
-    font-size: 1rem;
-    transition: color 0.3s;
-  }
-  
-  /* Styling for buttons */
-  .auth-links a.button {
-    padding: 8px 16px;
-    border: 1px solid #000;
-    
-    background-color: #f5f5f5;
-    color: #000;
-    font-weight: bold;
-    text-align: center;
-    cursor: pointer;
-  }
-  
-  .auth-links a.button:hover {
-    background-color: #f0a500;
-    color: #fff;
-    border-color: #f0a500;
-  }
-  
-  /* Responsive adjustments */
-  @media (max-width: 408px) {
-    .nav-links,
-    .auth-links {
-      flex-direction: column;
-      gap: 10px;
+}
 
-    }
-  }
+/* Navbar Styling */
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 15px 20px;
+  font-family: Arial, sans-serif;
   
+}
+
+/* Left-side logo */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Center navigation links */
+.nav-links {
+  display: flex;
+  gap: 80px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #050505;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #f0a500;
+}
+
+/* Right-side authentication links */
+.auth-links {
+  display: flex;
+  gap: 15px;
+}
+
+.auth-links a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+/* Styling for buttons */
+.auth-links a.button {
+  padding: 8px 16px;
+  border: 1px solid #000;
+  
+  background-color: #f5f5f5;
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+
+.auth-links a.button:hover {
+  background-color: #f0a500;
+  color: #fff;
+  border-color: #f0a500;
+}
+
+
+.main{
+  border: 2px solid red;
+  height: 90vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* padding: 74px; */
+
+}
+.text{
+  /* position: relative; */
+  border: 2px solid black;
+  width: 730px;
+  height: fit-content;
+  /* bottom: 200px; */
+}
+
+.image{
+  border: 2px solid black;
+}
+
+.main .image img {
+  width: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 408px) {
+  .nav-links,
+  .auth-links {
+    flex-direction: column;
+    gap: 10px;
+
+  }
+}
