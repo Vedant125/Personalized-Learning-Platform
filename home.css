@@ -74,7 +74,6 @@
 
 
 .main{
-  border: 2px solid red;
   height: 90vh;
   display: flex;
   justify-content: space-evenly;
@@ -84,15 +83,13 @@
 }
 .text{
   /* position: relative; */
-  border: 2px solid black;
+
   width: 730px;
   height: fit-content;
   /* bottom: 200px; */
 }
 
-.image{
-  border: 2px solid black;
-}
+
 
 .main .image img {
   width: 100%;
