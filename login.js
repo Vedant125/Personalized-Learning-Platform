@@ -39,3 +39,19 @@ function validateUser(username, password) {
 
     return username === mockUser.username && password === mockUser.password;
 }
+
+// Hide popup on outside click
+window.onclick = function(event) {
+    const loginPopup = document.getElementById("loginPopup");
+    const registerPopup = document.getElementById("registerPopup");
+
+    // Check if the click is outside the login popup
+    if (event.target === loginPopup) {
+        hideLoginPopup();
+    }
+
+    // Check if the click is outside the register popup
+    if (event.target === registerPopup) {
+        hideRegisterPopup();
+    }
+};
