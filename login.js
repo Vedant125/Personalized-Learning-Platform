@@ -55,3 +55,8 @@ window.onclick = function(event) {
         hideRegisterPopup();
     }
 };
+
+function switchToLogin() {
+    hideRegisterPopup();  // Hide the registration popup
+    showLoginPopup();     // Show the login popup
+}
