@@ -39,6 +39,7 @@
 
 .nav-links a:hover {
   color: #f0a500;
+  border-bottom: 2px solid #f0a500;
 }
 
 /* Right-side authentication links */
@@ -70,6 +71,7 @@
   background-color: #f0a500;
   color: #fff;
   border-color: #f0a500;
+  
 }
 
 
